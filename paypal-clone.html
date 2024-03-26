@@ -1,0 +1,446 @@
+<!-- PayPal Homepage Clone by Paulette Herrera -->
+<!-- February 2024 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link rel="preload" as="font" type="font/woff2" crossorigin="" href="https://www.paypalobjects.com/paypal-ui/fonts/PayPalOpen-Regular.woff2"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+   
+    <!-- Bootstrap CSS via CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Linking an external JavaScript file for Menu-->
+    <script src="script.js" defer></script>
+    
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Digital Wallets, Money Management, and More | PayPal US</title>
+    </head>
+
+<body>
+    <!-- Header starts -->
+    <header class="homepage-header">
+        <div class="header-wrapper">
+            <div class="logo-wrapper nav justify-content-center" id="developer-btn">
+                <a href="/paypal-clone.html" data-pa-click="Header-Logo-PayPal Logo" data-testid="header-logo" class="logo navbar-brand" pa-marked="1">
+                    PayPal logo
+                </a>
+            </div>
+            
+            <!-- Nav bar with buttons ans submenus -->
+            <nav class="main-menu nav justify-content-center" id="main-menu-nav">
+                <div class="main-menu-wrapper d-none d-md-flex">
+                    <div class="d-none d-md-flex align-items-center mr-md-3"> 
+                        <ul class="main-menu-list list-unstyled list-inline mb-0 ">
+                            <li class="list-inline-item">
+                                <button class="main-nav-button btn" data-text="Personal" id="personal-btn">Personal <span class="material-symbols-outlined">stat_minus_1</span></button>
+
+                                <ul class="submenu" id="personalMenu">
+                                    <div class="text-group-submenu">
+                                        <div class="text-group-headline">
+                                            <h4>
+                                                PayPal for You
+                                            </h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="submenu-grid">
+                                        <div class="column">
+                                            <div class="bold-link-section">
+                                                <li><a href="#" class="bold-link">Shopping & Rewards</a></li>
+                                                <div class="hr-container">
+                                                    <hr>
+                                                </div>
+                                                <li><a href="#">Buy Now, Pay Later</a></li>
+                                                <li><a href="#">Rewards</a></li>
+                                                <li><a href="#">Credit and cards</a></li>
+                                                <li><a href="#">Paying with Paypal</a></li>
+                                            </div>
+                                        </div>
+
+                                        <div class="column">
+                                            <div class="bold-link-section">
+                                                <li><a href="#" class="bold-link">Send & Receive</a></li>
+                                                <div class="hr-container">
+                                                    <hr>
+                                                </div>
+                                                <li><a href="#">Send Money</a></li>
+                                                <li><a href="#">Request Money</a></li>
+                                                <li><a href="#">Donate and raise funds</a></li>
+                                                <li><a href="#">Start Selling</a></li>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="bold-link-section">
+                                                <li><a href="#" class="bold-link">Manage Your Money</a></li>
+                                                <div class="hr-container">
+                                                    <hr>
+                                                </div>
+                                                <li><a href="#">Add cards and banks</a></li>
+                                                <li><a href="#">Security and safety</a></li>
+                                                <li><a href="#">Set up direct deposit</a></li>
+                                                <li><a href="#">Add cash</a></li>
+                                                <li><a href="#">Pay bills</a></li>
+                                                <li><a href="#">Savings and goals</a></li>
+                                                <li><a href="#">Cryptocurrency</a></li>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <li><a href="#" class="bold-link-button">Get the App</a></li>
+                                            <li><a href="#" class="bold-link-button">How Paypal Works</a></li>
+                                            <li><a href="#" class="bold-link-button">Money Hub</a></li>
+                                        </div>
+                                        
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="list-inline-item">
+                                <button class="main-nav-button btn" data-text="Small Business" id="business-btn">Small Business <span class="material-symbols-outlined">stat_minus_1</span></button>
+                                
+                                <ul class="submenu" id="businessMenu">
+                                    <div class="text-group-submenu">
+                                        <div class="text-group-headline">
+                                            <h4>
+                                                PayPal for Business
+                                            </h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="submenu-grid-5">
+                                        <div class="column">
+                                            <div class="bold-link-section">
+                                                <li><a href="#" class="bold-link">Accept Payments</a></li>
+                                                <div class="hr-container">
+                                                    <hr>
+                                                </div>
+                                                <li><a href="#">Online Checkout</a></li>
+                                                <li><a href="#">Installment Payments</a></li>
+                                                <li><a href="#">Invoicing</a></li>
+                                                <li><a href="#">POS System</a></li>
+                                            </div>
+                                        </div>
+
+                                        <div class="column">
+                                            <div class="bold-link-section">
+                                                <li><a href="#" class="bold-link">Financial Services</a></li>
+                                                <div class="hr-container">
+                                                    <hr>
+                                                </div>
+                                                <li><a href="#">Business Debit Card</a></li>
+                                                <li><a href="#">Business Credit Card</a></li>
+                                                <li><a href="#">Business Loan</a></li>
+                                                <li><a href="#">Working Capital Loan</a></li>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="bold-link-section">
+                                                <li><a href="#" class="bold-link">Business Operations</a></li>
+                                                <div class="hr-container">
+                                                    <hr>
+                                                </div>
+                                                <li><a href="#">Risk Management</a></li>
+                                                <li><a href="#">Reporting Tools</a></li>
+                                                <li><a href="#">Mass Payments</a></li>
+                                                <li><a href="#">Shipping</a></li>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="bold-link-section">
+                                                <li><a href="#" class="bold-link">Resources</a></li>
+                                                <div class="hr-container">
+                                                    <hr>
+                                                </div>
+                                                <li><a href="#">3rd Party Integrations</a></li>
+                                                <li><a href="#">Business Resource Center</a></li>
+                                                <li><a href="#">Accept Donations</a></li>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <li><a href="#" class="bold-link-button">Get the App</a></li>
+                                            <li><a href="#" class="bold-link-button">How Paypal Works</a></li>
+                                            <li><a href="#" class="bold-link-button">Money Hub</a></li>
+                                        </div>
+                                        
+                                    </div>
+                                
+                                </ul>
+
+                            </li>
+                            <li class="list-inline-item">
+                                <button class="main-nav-button btn" data-text="Enterprise" id="enterprise-btn">Enterprise <span class="material-symbols-outlined">stat_minus_1</span></button>
+
+                                <ul class="submenu" id="enterpriseMenu">
+                                    <div class="text-group-submenu">
+                                        <div class="text-group-headline">
+                                            <h4>
+                                                PayPal for Enterprise
+                                            </h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="submenu-grid">
+                                        <div class="column">
+                                            <div class="bold-link-section">
+                                                <li><a href="#" class="bold-link">Shopping & Rewards</a></li>
+                                                <div class="hr-container">
+                                                    <hr>
+                                                </div>
+                                                <li><a href="#">Buy Now, Pay Later</a></li>
+                                                <li><a href="#">Rewards</a></li>
+                                                <li><a href="#">Credit and cards</a></li>
+                                                <li><a href="#">Paying with Paypal</a></li>
+                                            </div>
+                                        </div>
+
+                                        <div class="column">
+                                            <div class="bold-link-section">
+                                                <li><a href="#" class="bold-link">Send & Receive</a></li>
+                                                <div class="hr-container">
+                                                    <hr>
+                                                </div>
+                                                <li><a href="#">Send Money</a></li>
+                                                <li><a href="#">Request Money</a></li>
+                                                <li><a href="#">Donate and raise funds</a></li>
+                                                <li><a href="#">Start Selling</a></li>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="bold-link-section">
+                                                <li><a href="#" class="bold-link">Manage Your Money</a></li>
+                                                <div class="hr-container">
+                                                    <hr>
+                                                </div>
+                                                <li><a href="#">Add cards and banks</a></li>
+                                                <li><a href="#">Security and safety</a></li>
+                                                <li><a href="#">Set up direct deposit</a></li>
+                                                <li><a href="#">Add cash</a></li>
+                                                <li><a href="#">Pay bills</a></li>
+                                                <li><a href="#">Savings and goals</a></li>
+                                                <li><a href="#">Cryptocurrency</a></li>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <li><a href="#" class="bold-link-button">Get the App</a></li>
+                                            <li><a href="#" class="bold-link-button">How Paypal Works</a></li>
+                                            <li><a href="#" class="bold-link-button">Money Hub</a></li>
+                                        </div>
+                                        
+                                    </div>
+                                </ul>
+                                
+                            </li>
+                            <li class="list-inline-item">
+                                <button class="main-nav-button btn" data-text="Developer" id="developer-btn">Developer</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-none d-md-flex align-items-center"> 
+                        <ul class="main-menu-list list-unstyled list-inline mb-0">
+                            <li class="list-inline-item">
+                                <button class="main-nav-button btn" data-text="Developer" id="developer-btn">What's New</button>
+                            </li>
+                            <li class="list-inline-item">
+                                <button class="main-nav-button btn" data-text="Developer" id="developer-btn">Help</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="header-buttons">
+                <a id="login">Log In</a>
+                <a id="signup">Sign Up</a>
+            </div>
+
+             <!-- Hamburger icon button -->
+             <button class="navbar-toggler" id="burguer" type="button">
+                <span class="menu-icon-bar"></span>
+                <span class="menu-icon-bar"></span>
+                <span class="menu-icon-bar"></span>
+            </button>
+            
+            <!-- Submenu -->
+            <div class="submenu-small-screen" id="submenu-small-screen">
+                <ul class="submenu-small-container">
+                    <li class="list-unstyled">
+                        <button class="main-nav-button-small btn" data-text="Personal" id="personal-btn">Personal </button>
+                        <button class="main-nav-button-small btn" data-text="Personal" id="personal-btn">Small Business </button>
+                        <button class="main-nav-button-small btn" data-text="Personal" id="personal-btn">Enterprise </button>
+                        <button class="main-nav-button-small btn" data-text="Personal" id="personal-btn">Developer </button>
+                        <button class="main-nav-button-small btn" data-text="Personal" id="personal-btn">What's New </button>
+                        <button class="main-nav-button-small btn" data-text="Personal" id="personal-btn">Help</button>
+                        
+                               
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Body Starts -->
+    <div class="homepage-sections">
+
+            <section class="homepage-sections-banner">
+                <div class="section-one-left">
+                    <div class="text-group">
+                        <div class="text-group-headline">
+                            <h1>
+                                There's a <em> plus side </em>to every purchase you make with PayPal.
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-one-right">
+                     <img class="video" src="video-dummy.png" alt="video-dummy"></img>
+                </div>
+            </section>
+
+            <section class="homepage-sections-two">
+                <div class="section-one-left" >
+                    <img class="img-left" src="section-two-left.jpg" alt=""></img>
+                </div>
+                <div class="section-one-right">
+                    <div class="text-group">
+                        <div class="text-group-headline">
+                            <h2 class="text-group-headline heading-text-size-headline-2">Get <em>unlimited cash back</em> on your favorite brands</h2>
+                        </div>
+                        <p class="text-group-paragraph">
+                            Save as many cash back<sup>1</sup> offers as you want. Earn 2, 3, 4, 5% and more after you check out with PayPal. Check offers for details.
+                            
+                            <a href="https://www.paypal.com/us/legalhub/pp-rewards-program-tnc" target="_self" rel="" class="html-text-renderer-link" data-pa-click="{&quot;link&quot;:&quot;SplitSection-Link-paragraph-Terms and exclusions apply&quot;,&quot;event_name&quot;:&quot;general_text_link_clicked&quot;}" pa-marked="1">Terms and exclusions apply</a>
+
+                        </p>
+                                        
+                        <div class="button-group-alignment-start">
+                            <a id="button-sections">
+                            Check Out the Offers
+                            </a>
+                        </div>
+                    </div>
+                     
+                </div>
+            </section>
+
+            <section class="homepage-sections-two-reverse">
+                <div class="section-one-left">
+                    <img class="img-left-two" src="section-three-left.jpg" alt=""></img>
+                    
+                </div>
+                <div class="section-one-right">
+                     <div class="section-wrapper">
+                        <div class="text-group">
+                            <div class="text-group-headline">
+                                <h2 class="text-group-headline heading-text-size-headline-2">Add another <br><em>3% on top</em></h2>
+                            </div>
+                            <p class="text-group-paragraph">Put it on your PayPal Cashback Mastercard<sup>®</sup>. You’ll earn unlimited 3% cash back<sup>2</sup> on your PayPal purchases.  And you’ll earn unlimited 2% cash back on all of your other purchases. No rotating categories. No annual fee.<sup>3</sup> Just unlimited cash back. Plus, no impact to your credit score if you're declined<sup>4</sup>.</p>
+                            <div class="button-group-alignment-start">
+                                <a id="button-sections">
+                                Learn About the Card
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="homepage-sections-two">
+                <div class="section-one-left">
+                    <img class="img-left" src="section-four-left.jpg" alt="video-dummy"></img>
+                </div>
+                <div class="section-one-right">
+                     
+
+                     <div class="section-wrapper">
+                        <div class="text-group">
+                            <div class="text-group-headline">
+                                <h2 class="text-group-headline heading-text-size-headline-2">Watch it <em>grow</em></h2>
+                            </div>
+                            <p class="text-group-paragraph">Roll all that cash back into a high-yield PayPal Savings account. You could earn 4.30% APY<sup>5</sup>.That's earning cash on cash back
+                                
+                            </p>
+                            <div class="button-group-alignment-start">
+                                <a id="button-sections">
+                                Sign Up for Paypal Savings
+                                </a>
+                            </div>
+                            <p class="text-group-paragraph">PayPal Balance account is required to use PayPal Savings. PayPal is a financial technology company, not a bank. Banking services provided by Synchrony Bank, Member FDIC.
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer starts -->
+            <footer class="footer">
+                <div class="container-lg">
+                    <div class="row">
+                        <div class="col-lg-10 offset-lg-1">
+                            
+                            <div class="text-wrapper-footer px-lg-4">
+                                <p>
+                                    1. Check offers for details. Terms and exclusions apply. <br>
+                                    2. Purchases are subject to credit approval, and the PayPal Cashback Mastercard must be used for payment. See Rewards Program Terms for details and restrictions. <br>
+                                    3. See Terms and Rates for New Accounts. <br>
+                                    4. Applications are subject to credit approval. You must be at least 18 years old and reside in the US or its territories to apply. An approved PayPal Cashback Mastercard application will result in a hard credit inquiry, which may impact your credit score. <br>
+                                    5. As of June 07, 2023, the annual percentage yield (APY) for PayPal Savings is 4.30%. This is a variable rate and can change at any time, including after the account is opened. <br>
+                                    The PayPal Cashback Mastercard is issued by Synchrony Bank pursuant to a license by Mastercard International Incorporated. Mastercard and the circles design are registered trademarks of Mastercard International Incorporated. <br>
+                                    The Contactless Indicator mark, consisting of four graduating arcs, is a trademark owned by and used with permission of EMVCo, LLC. <br>
+                                    All screen images are for illustrative purposes only.
+                                </p>
+
+                            </div>
+
+                            <div class="footer-logo-wrapper">
+                                <a href="/paypal-clone.html" data-pa-click="Footer-Logo-PayPal Logo" class="brand" pa-marked="1">PayPal Logo</a>
+                            </div>
+            
+                            <ul class="footer-list list-unstyled list-inline mb-0 d-flex justify-content-center justify-content-lg-start">
+                                <li class="list-inline-item">
+                                    <button class="footer-nav-button btn">Help</button>
+                                    <button class="footer-nav-button btn">Contact</button>
+                                    <button class="footer-nav-button btn">Fees</button>
+                                    <button class="footer-nav-button btn">Security</button>
+                                    <button class="footer-nav-button btn">Apps</button>
+                                    <button class="footer-nav-button btn">Shop</button>
+                                    <button class="footer-nav-button btn">Enterprise</button>
+                                    <button class="footer-nav-button btn">Partners</button>
+                                </li>
+                                
+                            </ul>
+                            
+                            <div class="hr-container-footer">
+                                <hr>
+                            </div>
+
+                            <ul class="footer-list list-unstyled list-inline mb-0 d-flex justify-content-center justify-content-lg-start">
+                                <li class="list-inline-item">
+                                    <button class="footer-nav-button btn">About</button>
+                                    <button class="footer-nav-button btn">Newsroom</button>
+                                    <button class="footer-nav-button btn">Jobs</button>
+                                    <button class="footer-nav-button btn">Investor Relations</button>
+                                    <button class="footer-nav-button btn">Values in Action</button>
+                                    <button class="footer-nav-button btn">Public Policy</button>
+                                </li>
+
+                                <li class="list-inline-item">
+                                    <button class="footer-nav-button btn">Accesibility</button>
+                                    <button class="footer-nav-button btn">Privacy</button>
+
+                                   
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    </div>
+</body>
+
+</html>

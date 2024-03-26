@@ -1,0 +1,742 @@
+/* Importing fonts from Google Fonts */
+
+@font-face {
+    font-family: 'PayPalOpen';
+    src: url('https://www.paypalobjects.com/paypal-ui/fonts/PayPalOpen-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'PayPalOpen-Bold';
+    src: url('https://www.paypalobjects.com/paypal-ui/fonts/PayPalOpen-Bold.woff2') format('woff2');
+    font-style: normal;
+  }
+
+*, :after, :before {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+body, html {
+    font-family: 'PayPalOpen', Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+}
+
+header{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    width: 100%;
+    display: block;
+}
+
+.submenu {
+    width: 100%; 
+    background-color: #ffffff; 
+    border-top: 1px solid #ccc; 
+    position: absolute;
+    top: 100%; 
+    left: 0; 
+    display: none;  
+    padding-bottom: 2rem; 
+}
+
+
+/* Show the submenu when the main button is hovered over */
+/* Show the submenu when hovering or clicking the main button */
+.main-nav-button:hover + .submenu,
+.main-nav-button:focus + .submenu{
+    display: block;
+}
+
+.submenu:hover {
+    display: block;
+}
+
+
+.submenu li {
+    margin: 5px 0; 
+}
+
+.submenu li a {
+    text-decoration: none;
+    color: #333; 
+    padding-left: 2rem;
+}
+
+.column li a {
+    text-decoration: none;
+    color: #333; 
+}
+
+.submenu li a:hover {
+    color: #007bff;
+}
+
+.bold-link {
+    font-weight: bold;
+}
+
+.bold-link li a {
+    font-weight: 800;
+}
+
+
+.hr-container {
+    border-color: #ccc;
+    border-width: .5px; 
+    padding-left: 2rem;
+    width: 90%;
+}
+
+.submenu-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 1.5rem;
+}
+
+.submenu-grid-5{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 10px;
+    padding: 1.5rem;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.bold-link-button {
+    display: inline-block;
+    padding: 1.2rem 2.5rem;
+    background-color: #f8f6f1; 
+    text-decoration: none;
+    border-radius: 10px; 
+    transition: background-color 0.3s ease; 
+    margin-left: 1.5rem;
+    width: 60%;
+}
+
+.bold-link-button:hover {
+    background-color: #0056b3; 
+}
+
+
+.submenu-small-screen {
+    width: 100%; 
+    background-color: #ffffff; 
+    border-top: 1px solid #ccc; 
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    display: none; 
+}
+
+.submenu-small-screen ul {
+    margin-left: 0;
+    padding-inline-start: 0;
+}
+
+/* Show the submenu when the main button is hovered over */
+/* Show the submenu when hovering or clicking the main button */
+.navbar-toggler:hover + .submenu-small-screen,
+.navbar-toggler:focus + .submenu-small-screen{
+    display:grid;
+}
+
+.submenu-small-screen li {
+    margin-bottom: 5px; 
+}
+
+.submenu-small-screen li a {
+    text-decoration: none;
+    color: #333; 
+}
+
+.submenu-small-container{
+    width: 100%;
+    position: relative;
+    padding: 1rem;
+}
+
+.list-unstyled{
+    display: block;
+}
+
+.header-wrapper{
+    padding: 1.2rem 2.5rem;
+    display: flex;
+    margin: auto;
+    z-index: 1000; 
+    position: relative;
+}
+
+.main-menu {
+    flex-grow: 1;
+    overflow: hidden;
+    padding-left: 1rem;
+}
+
+
+.main-menu-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.main-menu-wrapper ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ .logo-wrapper {
+    height: .1rem;
+    width: .1rem;
+    background-image: url(https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-mark-color.svg)!important;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 1.2rem;
+    margin: auto;
+}
+
+.logo-wrapper a{
+    font-size: xx-small;
+}
+
+.logo-wrapper .navbar-brand {
+    color: transparent;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.main-menu-list{
+    display: flex;
+}
+
+.main-menu-list li a{
+    color: #001c64;
+    font-family: 'PayPalOpen-Regular',Helvetica Neue,Arial,sans-serif;
+}
+
+.main-nav-button{
+    color: #001c64;
+    background-color: transparent;
+    border-color: transparent;
+    line-height: 1.5rem;
+    display: flex;
+    font-family: 'PayPalOpen-Regular',Helvetica Neue,Arial,sans-serif;
+    padding: 0.5rem 0.75rem!important;
+    overflow: visible;
+    height: 1.5rem;
+    cursor: pointer;
+    border-radius: 1.5625rem;
+    font-size: .95rem;
+    transition: background-color 0.3s ease;
+    margin-left: 2px;
+    font-weight: 350;
+    letter-spacing: 2;
+}
+
+
+.main-nav-button:hover .material-symbols-outlined {
+    transform: rotate(-180deg); 
+}
+
+.main-nav-button:hover{
+    background-color: #e3fbfb;
+    border-radius: 1.5625rem;
+    font-weight: bold;
+    color: #094196;
+    
+}
+
+.material-symbols-outlined {
+    display: inline-block;
+    transition: transform 0.3s ease; 
+    margin-left: -0.1rem; 
+    margin-right: -0.5rem; 
+}
+
+.main-nav-button-small {
+    background-color: transparent;
+    border: 0.09rem solid transparent;
+    border-radius: 1dvh;
+    line-height: 1.5rem;
+    display: block;
+    font-family: 'PayPalOpen-Regular',Helvetica Neue,Arial,sans-serif;
+    padding: 0.5rem 0.5rem!important;
+    overflow:scroll;
+    height: 1.5rem;
+    cursor: pointer;
+    border-radius: .5625rem;
+    font-size: 1.2rem;
+    align-items: center;
+    font-weight: 500;
+    letter-spacing: 2;
+    font-weight: bold;
+    color: #001c64;
+    text-align: left ;
+    margin: auto;
+    margin-bottom: 10px ;
+}
+
+.main-nav-button-small:hover {
+    color: #094196;
+    border: 0.09rem solid #e5e3e3;
+    border-radius: .5625rem;
+}
+    
+.header-buttons{
+    display: flex;
+    font-family: 'PayPalOpen-Bold',Helvetica Neue,Arial,sans-serif;
+}
+
+.header-buttons a,
+.header-buttons button {
+    box-sizing: border-box;
+    height: fit-content;
+}
+
+.section-buttons{
+    display: grid;
+    padding: 0.375rem 1rem;
+}
+
+.section-group-text{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.text-wrapper-footer{
+    padding: 2.5rem;
+    display: block;
+    height: fit-content;
+    color: #ffffff;
+    font-weight: 200;
+}
+
+#login{
+    padding: 0.7rem 2rem;
+    color: #003087;
+    border: 0.125rem solid #003087;
+    box-shadow: none;
+    letter-spacing: .032em;
+    display: inline-block;
+    margin-inline-start: 0.5625rem;
+    flex: 0 0 auto;
+    border-radius: 1.5625rem;
+}
+
+#login:hover{
+    color: #0070e0;
+    border-color:  #0070e0;;
+}
+
+#signup{
+    border: 0.125rem solid #003087;
+    background-color: #003087;
+    padding: 0.7rem 2rem;
+    color: #ffffff;
+    box-shadow: none;
+    display: inline-block;
+    margin-inline-start: 0.5625rem;
+    flex: 0 0 auto;
+    border-radius: 1.5625rem;
+    white-space: nowrap;
+}
+
+#signup:hover{
+    background-color: #0070e0;
+    border-color:  #0070e0;;
+}
+
+#button-sections{
+    border: 0.125rem solid #003087;
+    background-color: #003087;
+    padding: 0.75rem 2rem;
+    color: #ffffff;
+    box-shadow: none;
+    font-size: 1.1rem;
+    display: inline-block;
+    margin-inline-start: 0.5625rem;
+    flex: 0 0 auto;
+    border-radius: 1.5625rem;
+    white-space: nowrap;
+    margin: 0;
+}
+
+#button-sections:hover{
+    background-color: #0070e0;
+    border-color:  #0070e0;;
+}
+
+
+#developer-btn, #burguer{
+    transition: border 0.1s ease;
+    background-color: transparent;
+}
+
+#developer-btn:hover, #burguer:hover {
+    border: 0.09rem solid #e5e3e3;
+    border-radius: 1.5625rem;
+    color: #0070e0;
+}
+
+.menu-icon-bar {
+    display: block;
+    width: 17px; 
+    height: 2px; 
+    background-color: rgb(78, 77, 77); 
+    margin: 5px 0; 
+}
+
+link{
+    display: none;
+}
+
+
+.section-one-left,
+.section-one-right {
+    flex: 1;
+    padding-top: 3.2rem; 
+    padding-bottom: 3.2rem; 
+    padding-left: 7.65rem; 
+    padding-right: 7.65rem; 
+    transition: transform 0.3s ease-out; 
+    transform: translateX(-20px);
+}
+
+.section-one-left.animate,
+.section-one-right.animate {
+    transform: translate(-50%, -50%); 
+}
+
+.homepage-sections-banner{
+    background: linear-gradient(220deg,#001435 69.7%,#003087 101.85%);
+    min-height: 32.5vw;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 5.65rem;
+    height: fit-content;
+    margin-bottom: 3rem;
+}
+
+
+.homepage-sections-two{
+    background: #ffffff;
+    min-height: 32.5vw;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    position: relative;
+    top: auto;
+    height: fit-content;
+}
+
+
+.homepage-sections-two-reverse{
+    background: #ffffff;
+    min-height: 32.5vw;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 3.65rem;
+    height: fit-content;
+}
+
+#gray{
+    background: #f0f1f4;
+    min-height: 32.5vw;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    position: relative;
+    top: auto;
+    height: fit-content;
+}
+
+h1{
+    color: #fff;
+    margin: 0.67em 0;
+    font-weight: 500;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    display: block;
+    font-size: 2.7em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+em{
+    font-style: normal;
+    font-weight: 400;
+    color: #0070e0;
+}
+
+.html-text-renderer-link {
+    text-decoration: underline;
+}
+
+h2{
+    display: block;
+    font-size: 2.5em;
+    margin-block-start: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h4{
+    display: block;
+    font-size: 1.7em;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color: #001c64;
+}
+
+.text-group {
+    max-width: 85%;
+    text-align: left;
+}
+
+.text-group-submenu{
+    padding-left: 3.5rem;
+    max-width: 85%;
+    text-align: left;
+}
+
+.text-group-paragraph{
+    margin-top: 15px;
+}
+
+.text-group-headline{
+    font-family: PayPalOpen-Bold,Helvetica Neue,Arial,sans-serif;
+    margin-top: -10px;
+}
+
+.text-group-headline-black h1{
+    color: black;
+    font-family: PayPalOpen-Bold,Helvetica Neue,Arial,sans-serif;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -.015em;
+    width: 65%;
+}
+
+.video{
+    align-content: center;
+    justify-content: center;
+    width: 80%;
+    padding: 2rem;
+}
+
+.video-wrapper {
+    position: relative;
+}
+
+
+.img-left{
+    justify-content: center;
+    width: 100%;
+    padding: 3rem;
+    width: 90%;
+}
+
+.img-left-two{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 3rem;
+    width: 90%;
+}
+
+.button-group-alignment-start{
+    display: inline-flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: left;
+    font-weight: bold;
+}
+
+.section-wrapper-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.card-grid{
+    background-color:#f7f2ea;
+    padding: 0.75rem 2rem;
+    color: #001c64;
+    font-family: PayPalOpen-Bold,Helvetica Neue,Arial,sans-serif;
+    font-weight: 500;
+    box-shadow: none;
+    letter-spacing: .032em;
+    display: inline-block;
+    margin-inline-start: 0.5625rem;
+    flex: 0 0 auto;
+    border-radius: .8rem;
+    font-size: 1.1rem;
+    flex-direction:row;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.navbar-toggler{
+    display: none;
+}
+
+.footer{
+    display: block;
+    background: linear-gradient(220deg,#001435 69.7%,#003087 101.85%);
+    align-items: center;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.footer-logo-wrapper{
+   background-image: url(https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-monotone-transparent.svg);
+   width: 8rem;
+   height: 2rem;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   position: relative;
+   padding: .1rem;
+   margin: auto;
+   color: transparent;
+   text-indent: 100%;
+   white-space: nowrap;
+   justify-items: left;
+   right: 0;
+}
+
+.footer-logo-wrapper a{
+    font-size: xx-small;
+}
+
+.footer-logo-wrapper .brand{
+    color: transparent;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.footer-nav-button{
+    color: #ffffff;
+}
+
+.footer-nav-button:hover{
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-list{
+    text-align: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.hr-container-footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.hr-container-footer hr {
+    border-color: #ffffff;
+    border-width: 1px;
+    width: calc(100% - 2rem);
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.container-lg {
+    width: 90%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+@media (max-width: 1096px){
+    #login, #signup {
+        font-size: 0.9rem;
+        padding: 0.4rem .7rem; 
+        white-space: nowrap; 
+    }
+
+    .main-menu-list {
+        display: none;
+    }
+
+    .header-wrapper{
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: .9rem;
+        padding-right: .9rem;
+    }
+
+    .logo-wrapper {
+        height: .04rem;
+        width: .04rem;
+        padding: .8rem;
+    }
+
+    .homepage-sections-banner{
+        display: block;
+        top: 3.5rem;
+    }
+
+    .homepage-sections-two{
+        display: block;
+        top: 3.5rem;
+    }
+
+    .homepage-sections-two-reverse{
+        display: block;
+    }
+
+    .text-group {
+        max-width: 95%;
+        text-align: center;
+        font-size: .8rem;
+    }
+
+    .video{
+        width: 95%;
+    }
+    
+    .submenu-grid .submenu-grid-5{
+        display: block;
+    }
+
+    .navbar-toggler{
+        margin-left: 10px;
+        display: block;
+    }
+    .navbar-toggler-icon {
+        color: #333; 
+        border-color: #333;
+    }
+
+}
+
+
